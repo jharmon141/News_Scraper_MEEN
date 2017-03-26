@@ -95,7 +95,7 @@ app.post("/api/articles/:id", function(req, res) {
     // Otherwise
     else {
       // Use the article id to find and update it's note
-      Article.update({ "_id": req.params.id }, {$push:{comments:{$each: [doc], $position: 0}}})
+      Article.findOneAndUpdate({ "_id": req.params.id }, {$push:{comments:{$each: [doc], $position: 0}}})
       // Execute the above query
       .exec(function(err, doc) {
         // Log any errors
