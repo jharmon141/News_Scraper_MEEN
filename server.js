@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-mongoose.connect("mongodb://localhost/newsScraperData");
+mongoose.connect("mongodb://blah:blah@ds137230.mlab.com:37230/newsscraperdb");
 let db = mongoose.connection;
 
 let port = process.env.PORT || 4500;
