@@ -1,0 +1,10 @@
+    {{#each model as |article| }} 
+<div class="articleWrapper row col">
+        <div class="article">
+            <h2>{{article.title}}</h2> 
+            <a href={{article.link}}><p>{{article.link}}</p></a> <br>
+        </div>
+        {{article-comments comments=article.comments articleID=article._id reloadModel="reloadModel"}}
+</div>
+    {{/each}}
+{{outlet}}

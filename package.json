@@ -1,0 +1,25 @@
+{
+  "name": "news_scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jeremy Harmon",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cheerio": "^0.22.0",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.1",
+    "morgan": "^1.8.1",
+    "request": "^2.81.0",
+    "require": "^2.4.20"
+  }
+}

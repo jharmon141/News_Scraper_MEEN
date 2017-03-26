@@ -1,0 +1,6 @@
+{
+  "name": "news-scraper-fe",
+  "dependencies": {
+    "moment": "^2.18.0"
+  }
+}
